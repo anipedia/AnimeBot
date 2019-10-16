@@ -5,14 +5,14 @@ import random
 import json
 
 
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('s.'), pm_help=True, owenr_id=185181025104560128, case_insensitive=True)
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('z.'), pm_help=True, owenr_id=185181025104560128, case_insensitive=True)
 # bot.remove_command('help')
 
 cogs = ['help', 'fun']
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Activity(type=1,name="Playing status name"))
+    await bot.change_presence(activity=discord.Activity(type=1,name="z.help"))
     print(bot.user.name)
 
 
@@ -110,4 +110,4 @@ if __name__ == '__main__':
         print('{} loaded'.format(i))
 
 
-bot.run('Your Bot Token Here')
+bot.run('NjIyMDUyNzY5Mjg4ODE0NjAz.XaYwZg.qyoZhqM9Ak1ORGDB2wR3jhvYU-0')
